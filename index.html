@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jokenpo</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <div class="video-background">
+        <video 
+            autoplay
+            muted 
+            loop 
+            playsinline 
+            disablePictureInPicture 
+            disableRemotePlayback 
+            disablecontrolslist="nodownload noplaybackrate"
+            controlslist="nodownload noplaybackrate noremoteplayback"
+            class="video">
+
+            <source src="background.mp4" type="video/mp4">
+        </video>
+
+        <div class="overlay"></div>
+
+        <div class="container">
+            <div class ="centralizar">
+
+                <h1>Jokenpô</h1>
+
+                <button id="rock" onclick="playHuman('rock')">✊</button>
+                <button id="paper" onclick="playHuman('paper')">✋</button>
+                <button id="scissors" onclick="playHuman('scissors')">✌️</button>
+
+                <p id="resultado"></p>
+
+                <p id="sua-pontuacao">Sua Pontuação: <span id="score">0</span></p>
+                <p id="computador">Computador: <span id="computerScore">0</span></p>
+                <p id="escolhas"></p>
+            </div>
+        </div>
+
+    </div>
+</body>
+    <script src="script.js"></script>
+</html>

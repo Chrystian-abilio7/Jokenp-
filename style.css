@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+
+body {
+  background-size: cover;
+  align-items: center;
+}
+
+
+.video-background {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  background: cover;
+}
+
+.overlay{ 
+  position:absolute;
+  top:0;
+  left:0;
+
+  width:100%;
+  height:100%;
+
+  background: rgba(0,0,0,0.4);
+  z-index: -1;
+}
+
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  pointer-events:none;
+}
+
+.container {
+  background: rgba(0,0,0,0.4);
+  position: relative;
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(6px);
+  width: 300px;
+  margin: 0 auto;
+  height: 200px;
+  font-size: 15px;
+  align-items: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#rock{
+  background: rgba(191, 172, 28, 0.816);
+  border: none;
+  border-radius: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+
+
+#rock:hover{
+  background: rgba(191, 172, 28, 0.629);
+}
+
+#rock:active{
+  background: rgba(191, 172, 28, 0.39);
+}
+
+#paper{
+  background: rgb(222, 35, 191);
+  border: none;
+  border-radius: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  margin-right: 10px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+#paper:hover{
+  background: rgba(222, 35, 191, 0.629);
+}
+
+#paper:active{
+  background: rgba(222, 35, 191, 0.39);
+}
+
+#scissors{
+  background: rgb(0, 157, 255);
+  border: none;
+  border-radius: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+#scissors:hover{
+  background: rgba(0, 157, 255, 0.629);
+}
+
+#scissors:active{
+  background: rgba(0, 157, 255, 0.39);
+}
+
+button{
+  transition: background-color 0.3s ease;
+}
+#sua-pontuacao{
+  margin-top: 25px;
+  font-size: 16px;
+} 
+
+#computador{
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+#score{
+  font-weight: bold;
+  color: green;
+}
+
+#computerScore{
+  font-weight: bold;
+  color: red;
+}
+p{
+  font-weight: bold;
+}
+
+#resultado{
+  font-size: 16px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 75px;
+}
+
+#escolhas {
+  font-size: 10px;
+  margin-top: 10px;
+}
