@@ -202,3 +202,39 @@ h1{
 button{
   transition: background-color 0.3s ease;
 }
+
+@media screen and (max-width: 527px) {
+  .container {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+  }
+
+  #rock, #paper, #scissors {
+    width: 60px;
+    height: 60px;
+    font-size: 40px;
+    margin-right: 5px;
+  }
+
+  #sua-pontuacao, #computador {
+    font-size: 20px;
+  }
+
+  #resultado {
+    font-size: 20px;
+    bottom: 110px;
+  }
+
+  #reset {
+    width: 150px;
+    height: 50px;
+    font-size: 16px;
+    bottom: 25%;
+    font-size: 20px;
+  }
+  p{
+    font-size: 20px;
+  }
+  
+}
