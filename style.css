@@ -47,16 +47,16 @@ body {
   background: rgba(0,0,0,0.4);
   position: relative;
   color: rgb(255, 255, 255);
-  border-radius: 10px;
+  border-radius: 20px;
   text-align: center;
   top: 50%;
   transform: translateY(-50%);
   align-items: center;
   justify-content: center;
   backdrop-filter: blur(6px);
-  width: 300px;
+  width: 525px;
   margin: 0 auto;
-  height: 200px;
+  height: 350px;
   font-size: 15px;
   align-items: center;
   padding: 20px;
@@ -64,15 +64,16 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
 }
 
 #rock{
   background: rgba(191, 172, 28, 0.816);
   border: none;
-  border-radius: 5px;
-  width: 40px;
-  height: 40px;
-  font-size: 30px;
+  border-radius: 10px;
+  width: 70px;
+  height: 70px;
+  font-size: 50px;
   margin-right: 10px;
   cursor: pointer;
 }
@@ -90,10 +91,10 @@ body {
 #paper{
   background: rgb(222, 35, 191);
   border: none;
-  border-radius: 5px;
-  width: 40px;
-  height: 40px;
-  font-size: 30px;
+  border-radius: 10px;
+  width: 70px;
+  height: 70px;
+  font-size: 50px;
   margin-right: 10px;
   cursor: pointer;
   margin-top: 15px;
@@ -110,10 +111,10 @@ body {
 #scissors{
   background: rgb(0, 157, 255);
   border: none;
-  border-radius: 5px;
-  width: 40px;
-  height: 40px;
-  font-size: 30px;
+  border-radius: 10px;
+  width: 70px;
+  height: 70px;
+  font-size: 50px;
   margin-right: 10px;
   cursor: pointer;
 }
@@ -126,17 +127,15 @@ body {
   background: rgba(0, 157, 255, 0.39);
 }
 
-button{
-  transition: background-color 0.3s ease;
-}
+
 #sua-pontuacao{
-  margin-top: 25px;
-  font-size: 16px;
+  margin-top: 40px;
+  font-size: 27px;
 } 
 
 #computador{
   margin-top: 5px;
-  font-size: 16px;
+  font-size: 27px;
 }
 
 #score{
@@ -153,14 +152,53 @@ p{
 }
 
 #resultado{
-  font-size: 16px;
+  font-size: 27px;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 75px;
+  bottom: 125px;
 }
 
 #escolhas {
-  font-size: 10px;
+  font-size: 20px;
   margin-top: 10px;
+}
+
+
+
+
+h1{
+  font-size: 60px;
+  margin-bottom: 5px;
+}
+
+#reset{
+  background: rgba(255, 0, 0, 0.816);
+  border: none;
+  border-radius: 10px;
+  width: 120px;
+  height: 50px;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 25%;
+  padding: 3px;
+  transition: background-color 0.3s ease;
+}
+
+#reset:hover{
+  background: rgba(255, 0, 0, 0.629);
+}
+
+#reset:active{
+  background: rgba(255, 0, 0, 0.39);
+}
+  
+
+button{
+  transition: background-color 0.3s ease;
 }

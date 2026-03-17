@@ -66,5 +66,13 @@ const playTheGame = (humanChoice, computerChoice) => {
     else if (computerChoice === "paper") {
         escolhas.innerHTML = "Computador escolheu: Papel";
 } 
-}   
+}
 
+// Função para resetar o jogo
+const resetGame = () => {
+    document.getElementById('score').innerHTML = 0;
+    document.getElementById('computerScore').innerHTML = 0;
+    resultado.innerHTML = "";
+    resultado.style.color = "white";
+    document.getElementById('escolhas').innerHTML = "";
+}
